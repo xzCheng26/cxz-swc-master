@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cxz-swc-master:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>cxz-swc-master</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="rsbi-os-4.7.war">
+      <element id="artifact" artifact-name="cxz-swc-master:war exploded" />
+    </root>
+  </artifact>
+</component>
