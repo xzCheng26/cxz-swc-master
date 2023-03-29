@@ -1,0 +1,1 @@
+select  a0.prov_name as prov_name,  a0.city_name as city_name, sum(a0.id) id from code_area a0 where 1=1   group by a0.prov_name,a0.city_name

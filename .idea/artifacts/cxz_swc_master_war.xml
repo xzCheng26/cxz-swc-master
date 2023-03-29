@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="rsbi-os-4.7.war">
+    <root id="archive" name="swc-server-4.7.war">
       <element id="artifact" artifact-name="cxz-swc-master:war exploded" />
     </root>
   </artifact>

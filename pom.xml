@@ -8,12 +8,12 @@
         <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.cxz.</groupId>
-    <artifactId>rsbi-os</artifactId>
+    <groupId>com.cxz</groupId>
+    <artifactId>swc-server</artifactId>
     <version>4.7</version>
     <packaging>war</packaging>
-    <name>rsbi-os</name>
-    <description>rsbi开源版</description>
+    <name>swc-server</name>
+    <description>智慧水利</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -57,6 +57,29 @@
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-spring</artifactId>
             <version>1.7.1</version>
+        </dependency>
+        <!-- 本地jar -->
+        <dependency>
+            <groupId>com.rsbi.ext</groupId>
+            <artifactId>ext3</artifactId>
+            <version>1.5</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/ext3-1.5.jar</systemPath>
+        </dependency>
+        <!-- 本地  oracle jar -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>12.1.0.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/ojdbc6-12.1.0.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm</groupId>
+            <artifactId>db2jcc</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/db2jcc-1.0.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
