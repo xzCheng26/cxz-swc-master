@@ -2,8 +2,6 @@ package com.cxz.mushu.entity.portal;
 
 /**
  * 组件参数dto
- * @author hq
- *
  */
 public class CompParamDto {
 	

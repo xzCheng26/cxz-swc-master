@@ -6,9 +6,7 @@ import javax.servlet.ServletContext;
 import java.io.InputStream;
 
 /**
- * 对于报表、仪表盘、多维分析等工具生成的mv对象，直接从数据库中读取xml文件 
- * @author hq
- * @date 2015-5-14
+ * 对于报表、仪表盘、多维分析等工具生成的mv对象，直接从数据库中读取xml文件
  */
 public class LoadXmlFromDB implements ExtXMLLoader {
 

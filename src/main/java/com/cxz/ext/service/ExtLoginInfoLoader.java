@@ -9,8 +9,6 @@ import java.util.Map;
 
 /**
  * ext 获取登录信息的方法
- * @author hq
- * @date Mar 25, 2010
  */
 public class ExtLoginInfoLoader  implements LoginUserInfoLoader {
 

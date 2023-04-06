@@ -14,8 +14,6 @@ import java.io.IOException;
 
 /**
  * 跨域请求设置Filter
- * @author gdp
- * @Date 2020/9/18 9:38 上午
  */
 @Component
 public class HeadFilter implements Filter  {

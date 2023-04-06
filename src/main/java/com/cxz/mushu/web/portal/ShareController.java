@@ -19,8 +19,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 报表分享
- * @author gdp
- *
  */
 @Controller
 @RequestMapping(value = "/portal")

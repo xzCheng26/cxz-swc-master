@@ -12,8 +12,6 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @ClassName 数据权限控制类
- * @Author huangqin
- * @Date 2020/12/14 3:29 下午
  */
 @Configuration
 public class DataControlConfig {

@@ -26,8 +26,6 @@ import java.util.regex.Pattern;
 
 /**
  * 组件基类Service
- * @author hq
- *
  */
 public abstract class BaseCompService {
 

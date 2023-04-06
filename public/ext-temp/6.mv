@@ -1,1 +1,1 @@
-select  a0.prov_name as prov_name,  a0.code as code, sum(a0.id) id from code_area a0 where 1=1   group by a0.prov_name,a0.code
+select  a0.id as id, sum(a0.dept_id) dept_id from emp a0 where 1=1   group by a0.id

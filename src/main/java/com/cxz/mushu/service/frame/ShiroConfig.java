@@ -23,8 +23,6 @@ import java.util.Map;
 /**
  * @ClassName ShiroConfig
  * @Description ShiroConfig
- * @Author gdp
- * @Date 2020/9/18 10:29 上午
  */
 @Configuration
 public class ShiroConfig {

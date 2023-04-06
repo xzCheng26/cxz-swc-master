@@ -16,8 +16,6 @@ import java.util.UUID;
 /**
  * 复制url service
  * 复制的 url 可以发给别人
- * @author hq
- *
  */
 @Service
 public class ShareUrlService {

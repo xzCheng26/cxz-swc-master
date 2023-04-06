@@ -29,8 +29,6 @@ import java.util.Map;
 
 /**
  * 提取表格明细Service
- * @author hq
- *
  */
 @Service
 public class TableDetailService extends BaseCompService {

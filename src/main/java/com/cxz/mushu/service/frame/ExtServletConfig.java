@@ -15,8 +15,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * 配置Ext使用的Servlet
  * @ClassName ExtServletConfig
  * @Description ExtServletConfig
- * @Author huangqin
- * @Date 2021/2/7 5:49 下午
  */
 @Configuration
 public class ExtServletConfig implements WebMvcConfigurer {

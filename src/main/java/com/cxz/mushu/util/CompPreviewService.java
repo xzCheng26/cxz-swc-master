@@ -39,8 +39,6 @@ import java.util.Map;
 
 /**
  * 组件预览类.创建必要的组件预览对象
- * @author hq
- * @date Aug 18, 2010
  */
 public class CompPreviewService {
 	

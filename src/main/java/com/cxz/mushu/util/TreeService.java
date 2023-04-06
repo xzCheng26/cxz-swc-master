@@ -8,8 +8,6 @@ import java.util.Map;
 
 /**
  * 递归调用，生成Tree 数据
- * @author hq
- * @date 2014-7-30
  */
 public class TreeService {
 	

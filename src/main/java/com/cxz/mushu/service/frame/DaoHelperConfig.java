@@ -14,8 +14,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
  * 配置 daoHelper
- * @Author huangqin
- * @Date 2020/10/19 5:17 下午
  */
 @Configuration
 public class DaoHelperConfig {

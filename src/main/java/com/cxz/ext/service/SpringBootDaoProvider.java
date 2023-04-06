@@ -16,8 +16,6 @@ import javax.servlet.ServletContext;
  * springboot 提供 ext3 框架使用的 daoHelper 类
  * @ClassName SpringBootDaoProvider
  * @Description SpringBootDaoProvider
- * @Author huangqin
- * @Date 2020/12/31 4:18 下午
  */
 public class SpringBootDaoProvider implements DaoProvider  {
 

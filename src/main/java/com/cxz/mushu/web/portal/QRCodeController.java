@@ -24,8 +24,6 @@ import java.util.Map;
 
 /**
  * 二维码生成工具
- * @author zxd
- * @Date 2019年8月23日
  */
 @Controller
 @RequestMapping(value = "/portal")

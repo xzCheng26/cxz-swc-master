@@ -4,8 +4,6 @@ import com.cxz.mushu.entity.common.BaseEntity;
 
 /**
  * 事件接收
- * @author hq
- *
  */
 public class LinkAcceptDto extends BaseEntity {
 
