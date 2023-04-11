@@ -1,4 +1,4 @@
-package com.cxz.ext.service;
+package com.cxz.mushu.servlet;
 
 import com.rsbi.ext.engine.init.ExtXMLLoader;
 

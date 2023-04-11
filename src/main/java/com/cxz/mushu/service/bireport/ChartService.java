@@ -2,6 +2,7 @@ package com.cxz.mushu.service.bireport;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.cxz.mushu.servlet.DataControlInterface;
 import com.rsbi.ext.engine.view.context.chart.ChartContext;
 import com.rsbi.ext.engine.view.context.chart.ChartContextImpl;
 import com.rsbi.ext.engine.view.context.chart.ChartKeyContext;
@@ -19,7 +20,6 @@ import com.rsbi.ispire.dc.grid.GridFilter;
 import com.cxz.mushu.entity.bireport.*;
 import com.cxz.mushu.mapper.bireport.AreaMapper;
 import com.cxz.mushu.util.RSBIUtils;
-import com.cxz.ext.service.DataControlInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.cxz.ext.service;
+package com.cxz.mushu.servlet;
 
 import com.rsbi.ext.engine.cross.CrossFieldLoader;
 import com.rsbi.ext.engine.view.context.cross.CrossField;
@@ -11,6 +11,7 @@ public class MyCrossFieldLoader implements CrossFieldLoader {
 	
 	private ExtRequest request;
 	
+	@Override
 	public void setRequest(ExtRequest request) {
 		this.request = request;
 	}
@@ -29,6 +30,7 @@ public class MyCrossFieldLoader implements CrossFieldLoader {
 		return null;
 	}
 	
+	@Override
 	public String loadFieldName(String type, String value) {
 		return "合计";
 	}
