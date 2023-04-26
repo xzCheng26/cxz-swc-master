@@ -7,7 +7,7 @@
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 spring:
   datasource:
-    url: jdbc:sqlite::resource:rsreport.sqlite3
+    url: jdbc:sqlite::resource:cxz-swc.sqlite3
     username:
     password:
     driver-class-name: org.sqlite.JDBC

@@ -19,7 +19,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+/**
+ *
+ */
 @Controller
 @Scope("prototype")
 @RequestMapping(value = "/bireport")
@@ -30,6 +32,9 @@ public class TableController extends BaseController {
 
 	private static Logger logger = Logger.getLogger(TableController.class);
 
+	/**
+	 *
+	 */
 	@RequestMapping(value="/TableView.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object tableView(@RequestBody TableQueryDto tableJson, HttpServletRequest req, HttpServletResponse res) throws Exception {

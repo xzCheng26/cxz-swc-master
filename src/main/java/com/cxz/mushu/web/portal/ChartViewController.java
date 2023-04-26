@@ -20,6 +20,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 数据报表-图表
+ */
 @Controller
 @Scope("prototype")
 @RequestMapping(value = "/portal")
@@ -30,6 +33,9 @@ public class ChartViewController extends BaseController {
 	@Autowired
 	private PortalChartService chartService;
 
+	/**
+	 *实现图表拖拽展示
+	 */
 	@RequestMapping(value="/ChartView.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object tableView(@RequestBody PortalChartQuery chartJson, HttpServletRequest req, HttpServletResponse res) throws Exception {
@@ -53,6 +59,9 @@ public class ChartViewController extends BaseController {
 		}
 	}
 
+	/**
+	 *
+	 */
 	@RequestMapping(value="/chartColors.action")
 	public @ResponseBody
     Object chartColors() {

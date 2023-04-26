@@ -16,6 +16,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ *
+ */
 @Controller
 @RequestMapping(value = "/bireport")
 public class DimController extends BaseController {
@@ -26,12 +29,18 @@ public class DimController extends BaseController {
 	@Autowired
 	private DimensionService dimService;
 
+	/**
+	 *
+	 */
 	@RequestMapping(value="/queryDims.action")
 	public @ResponseBody
     Object queryDims(Integer cubeId){
 		return super.buildSucces(service.listDims(cubeId));
 	}
-	
+
+	/**
+	 *
+	 */
 	@RequestMapping(value="/paramFilter.action")
 	public @ResponseBody
 	Object paramFilter(ParamDto param, String keyword) throws Exception{

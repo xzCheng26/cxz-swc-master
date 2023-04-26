@@ -29,6 +29,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.InputStream;
 
+/**
+ * 数据报表
+ */
 @Controller
 @Scope("prototype")
 @RequestMapping(value = "/portal")
@@ -45,6 +48,9 @@ public class PortalViewController extends BaseController {
 	@Autowired
 	private ShareUrlService urlService;
 
+	/**
+	 *实现报表拖拽展示
+	 */
 	@RequestMapping(value="/view.action")
 	public @ResponseBody
     Object view(String pageId, HttpServletRequest req, HttpServletResponse res) {
@@ -73,13 +79,19 @@ public class PortalViewController extends BaseController {
 		}
 	}
 
+	/**
+	 *分享报表
+	 */
 	@RequestMapping(value="/share/view.action")
 	public @ResponseBody
 	Object shareView(String token, HttpServletRequest req, HttpServletResponse res) {
 		ShareUrl url = urlService.getByToken(token);
 		return this.view(url.getReportId(), req, res);
 	}
-	
+
+	/**
+	 * 导出报表
+	 */
 	@RequestMapping(value="/export.action")
 	public void export(String type, String pageId, String json, String picinfo, HttpServletRequest req, HttpServletResponse res) throws Exception {
 		if(json == null || json.length() == 0){
@@ -143,7 +155,10 @@ public class PortalViewController extends BaseController {
 			ser.buildMV(mv, emitter, req.getServletContext());
 		}
 	}
-	
+
+	/**
+	 *
+	 */
 	@RequestMapping(value="/print.action")
 	public String print(String pageId, String pageInfo, HttpServletRequest req, HttpServletResponse res) throws Exception {
 		if(pageInfo == null || pageInfo.length() == 0){
@@ -164,7 +179,10 @@ public class PortalViewController extends BaseController {
 		req.setAttribute("str", ret);
 		return "portal/PortalIndex-print";
 	}
-	
+
+	/**
+	 *
+	 */
 	@RequestMapping(value="/getReportJson.action")
 	public @ResponseBody
     Object getReportJson(String reportId) {

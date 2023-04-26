@@ -22,6 +22,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ *
+ */
 @Controller
 @Scope("prototype")
 @RequestMapping(value = "/bireport")
@@ -35,6 +38,9 @@ public class ChartController extends BaseController  {
 
 	private static Logger logger = Logger.getLogger(TableController.class);
 
+	/**
+	 *
+	 */
 	@RequestMapping(value="/ChartView.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object chartView(@RequestBody ChartQueryDto chartJson, HttpServletRequest req, HttpServletResponse res) throws Exception {
@@ -58,22 +64,34 @@ public class ChartController extends BaseController  {
 		}
 	}
 
+	/**
+	 *
+	 */
 	@RequestMapping(value="/listAreas.action")
 	public @ResponseBody Object listAreas(){
 		return super.buildSucces(areaService.listProvAndCitys());
 	}
 
-
+	/**
+	 *
+	 */
 	@RequestMapping(value="/getProvByName.action")
 	public @ResponseBody Object getProvByName(String name){
 		return super.buildSucces(areaService.getProvByName(name));
 	}
 
+	/**
+	 *
+	 */
 	@RequestMapping(value="/getCityByName.action")
 	public @ResponseBody Object getCityByName(String name){
 		return super.buildSucces(areaService.getCityByName(name));
 	}
 
+
+	/**
+	 *
+	 */
 	@RequestMapping(value="/getProvByCityCode.action")
 	public @ResponseBody Object getProvByCityCode(String code){
 		Area area = areaService.getProvByCityCode(code);

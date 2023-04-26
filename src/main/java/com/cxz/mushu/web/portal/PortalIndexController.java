@@ -20,6 +20,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
+/**
+ * 数据报表-报表
+ */
 @Controller
 @RequestMapping(value = "/portal")
 public class PortalIndexController extends BaseController {
@@ -29,7 +32,10 @@ public class PortalIndexController extends BaseController {
 
 	@Autowired
 	private ShareUrlService urlService;
-	
+
+	/**
+	 * 删除报表
+	 */
 	@RequestMapping(value="/delete.action")
 	public @ResponseBody
     Object delete(String pageId) {
@@ -37,6 +43,9 @@ public class PortalIndexController extends BaseController {
 		return this.buildSucces();
 	}
 
+	/**
+	 *拿到报表
+	 */
 	@RequestMapping(value="/get.action")
 	public @ResponseBody
 	Object get(String pageId) {
@@ -47,6 +56,9 @@ public class PortalIndexController extends BaseController {
 		return this.buildSucces(str);
 	}
 
+	/**
+	 *分享报表
+	 */
 	@RequestMapping(value="/share/get.action")
 	public @ResponseBody
 	Object shareGet(String token) {
@@ -58,6 +70,9 @@ public class PortalIndexController extends BaseController {
 		return this.buildSucces(str);
 	}
 
+	/**
+	 *报表列表
+	 */
 	@RequestMapping(value="/list.action")
 	public @ResponseBody
 	Object list(PageParam page) {
@@ -68,14 +83,20 @@ public class PortalIndexController extends BaseController {
 		PageInfo<Portal> pageInfo=new PageInfo<>(ls);
 		return this.buildSucces(pageInfo);
 	}
-	
+
+	/**
+	 *重命名报表
+	 */
 	@RequestMapping(value="/rename.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object rename(Portal portal) {
 		portalService.renamePortal(portal);
 		return this.buildSucces();
 	}
-	
+
+	/**
+	 *新增报表
+	 */
 	@RequestMapping(value="/save.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object save(Portal portal){

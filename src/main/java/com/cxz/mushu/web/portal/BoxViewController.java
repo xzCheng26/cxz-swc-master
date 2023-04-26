@@ -21,16 +21,22 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 数据报表-数据块（废弃）
+ */
 @Controller
 @Scope("prototype")
 @RequestMapping(value = "/portal")
 public class BoxViewController extends BaseController {
 
 	private static Logger logger = Logger.getLogger(BoxViewController.class);
-	
+
 	@Autowired
 	private BoxService serivce;
 
+	/**
+	 *实现数据块拖拽展示
+	 */
 	@RequestMapping(value="/BoxView.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object tableView(@RequestBody BoxQuery box, HttpServletRequest req, HttpServletResponse res) throws Exception {
@@ -52,5 +58,5 @@ public class BoxViewController extends BaseController {
 			return super.buildError(ex.getMessage());
 		}
 	}
-	
+
 }

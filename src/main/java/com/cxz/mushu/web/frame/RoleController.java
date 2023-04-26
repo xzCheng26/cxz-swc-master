@@ -30,7 +30,10 @@ public class RoleController extends BaseController {
 	
 	@Autowired
 	private RoleService service;
-	
+
+	/**
+	 * 分页查询-获取角色列表
+	 */
 	@RequestMapping(value="/role/list.action")
 	public @ResponseBody
     Object list(PageParam page) {
@@ -41,13 +44,19 @@ public class RoleController extends BaseController {
 		PageInfo<Role> pageInfo=new PageInfo<Role>(ls);
 		return super.buildSucces(pageInfo);
 	}
-	
+
+	/**
+	 * 根据用户id获取角色详情
+	 */
 	@RequestMapping(value="/role/userRolelist.action")
 	public @ResponseBody
     Object userRolelist(Integer userId) {
 		return super.buildSucces(service.listUserRole(userId));
 	}
-	
+
+	/**
+	 *新增用户角色
+	 */
 	@RequestMapping(value="/role/userRoleSave.action")
 	public @ResponseBody
     Object userRoleSave(@RequestBody Map<String, Object> pms) {
@@ -56,34 +65,50 @@ public class RoleController extends BaseController {
 		service.addUserRole(roles, userId);
 		return super.buildSucces();
 	}
-	
+
+	/**
+	 *新增角色
+	 */
 	@RequestMapping(value="/role/save.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object save(Role role) {
 		service.saveRole(role);
 		return super.buildSucces();
 	}
-	
+
+	/**
+	 *修改角色
+	 */
 	@RequestMapping(value="/role/update.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object update(Role role) {
 		service.updateRole(role);
 		return super.buildSucces();
 	}
-	
+
+	/**
+	 *删除角色
+	 */
 	@RequestMapping(value="/role/delete.action")
 	public @ResponseBody
     Object delete(Integer roleId) {
 		service.deleteRole(roleId);
 		return super.buildSucces();
 	}
-	
+
+	/**
+	 *获取角色详情
+	 */
 	@RequestMapping(value="/role/get.action")
 	public @ResponseBody
     Object getRole(Integer roleId) {
 		return super.buildSucces(service.getRole(roleId));
 	}
 
+
+	/**
+	 * 获取角色菜单关系
+	 */
 	@RequestMapping(value="/role/roleMenu.action")
 	public @ResponseBody
 	Object roleMenu(Integer roleId) {
@@ -91,6 +116,10 @@ public class RoleController extends BaseController {
 		return super.buildSucces(menus);
 	}
 
+
+	/**
+	 * 修改角色菜单关系
+	 */
 	@RequestMapping(value="/role/menuSave.action", method = RequestMethod.POST)
 	public @ResponseBody Object roleMenuSave(String menuIds, Integer roleId) {
 		service.roleMenu(menuIds, roleId);

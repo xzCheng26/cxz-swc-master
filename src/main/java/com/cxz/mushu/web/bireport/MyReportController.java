@@ -14,25 +14,37 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
+/**
+ *
+ */
 @Controller
 @RequestMapping(value = "/bireport")
 public class MyReportController extends BaseController {
 	
 	@Autowired
 	private OlapService service;
-	
+
+	/**
+	 *
+	 */
 	@RequestMapping(value="/listReport.action")
 	public @ResponseBody Object list(String keyword){
 		List<OlapInfo> ret = service.listreport(keyword);
 		return super.buildSucces(ret);
 	}
 
+	/**
+	 *
+	 */
 	@RequestMapping(value="/getReport.action")
 	public @ResponseBody Object getReport(Integer pageId){
 		OlapInfo olap = service.getOlap(pageId);
 		return super.buildSucces(olap);
 	}
-	
+
+	/**
+	 *
+	 */
 	@RequestMapping(value="/saveReport.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object save(OlapInfo info){
@@ -52,14 +64,20 @@ public class MyReportController extends BaseController {
 		//返回ID
 		return super.buildSucces(info.getPageId());
 	}
-	
+
+	/**
+	 *
+	 */
 	@RequestMapping(value="/deleteReport.action")
 	public @ResponseBody
     Object deleteReport(Integer id){
 		service.deleteOlap(id);
 		return this.buildSucces();
 	}
-	
+
+	/**
+	 *
+	 */
 	@RequestMapping(value="/renameReport.action")
 	public @ResponseBody
     Object rename(OlapInfo info){

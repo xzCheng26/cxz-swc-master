@@ -21,6 +21,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 数据报表-表格
+ */
 @Controller
 @Scope("prototype")
 @RequestMapping(value = "/portal")
@@ -31,6 +34,9 @@ public class GridViewController extends BaseController {
 	@Autowired
 	private GridService serivce;
 
+	/**
+	 * 实现表格拖拽展示
+	 */
 	@RequestMapping(value="/GridView.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object tableView(@RequestBody GridQuery grid, HttpServletRequest req, HttpServletResponse res) throws Exception {

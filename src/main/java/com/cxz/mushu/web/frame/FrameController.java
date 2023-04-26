@@ -11,6 +11,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * 权限管理
+ */
 @Controller
 @RequestMapping(value = "/frame")
 public class FrameController extends BaseController {
@@ -18,6 +21,9 @@ public class FrameController extends BaseController {
 	@Autowired
 	private MenuService service;
 
+	/**
+	 * 获取权限管理菜单列表（包括用户管理、角色管理、菜单管理）
+	 */
 	@RequestMapping(value="/Menus.action")
 	public @ResponseBody
 	Object execute() {

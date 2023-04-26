@@ -31,6 +31,9 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
 
+/**
+ *
+ */
 @Controller
 @RequestMapping(value = "/bireport")
 @Scope("prototype")
@@ -44,8 +47,10 @@ public class ReportDesignController extends BaseController {
 	
 	@Autowired
 	private ReportService reportService;
-	
 
+	/**
+	 *
+	 */
 	@RequestMapping(value="/ReportExport.action", method = RequestMethod.POST)
 	public @ResponseBody
     Object export(String type, String json, String picinfo, HttpServletRequest req, HttpServletResponse res) throws Exception{
@@ -108,13 +113,19 @@ public class ReportDesignController extends BaseController {
 		
 		return null;
 	}
-	
+
+	/**
+	 *
+	 */
 	@RequestMapping(value="/kpidesc.action")
 	public @ResponseBody Object kpidesc(Integer cubeId){
 		List<Map<String, Object>>  ret = service.listKpiDesc(cubeId);
 		return super.buildSucces(ret);
 	}
-	
+
+	/**
+	 *
+	 */
 	@RequestMapping(value="/print.action", method = RequestMethod.POST)
 	public @ResponseBody Object print(String pageInfo, HttpServletRequest req, HttpServletResponse res) throws Exception{
 		ExtContext.getInstance().removeMV(ReportService.deftMvId);
