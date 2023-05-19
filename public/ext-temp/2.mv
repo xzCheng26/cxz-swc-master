@@ -1,1 +1,1 @@
-select  a0.prov_name as prov_name, sum(a0.id) id from code_area a0 where 1=1   group by a0.prov_name
+select  a0.city as city, sum(a0.total_rainfall) total_rainfall from rainfall_data a0 join guil2012 a1 on a0.id=a1.pid  where 1=1   group by a0.city

@@ -1,1 +1,1 @@
-select  a0.prov_name as prov_name,  a0.city_name as city_name, sum(a0.id) id from code_area a0 where 1=1   group by a0.prov_name,a0.city_name
+select  a0.city as city, '毫米' kpi_unit,sum(a0.total_rainfall) total_rainfall from rainfall_data a0 where 1=1   group by a0.city

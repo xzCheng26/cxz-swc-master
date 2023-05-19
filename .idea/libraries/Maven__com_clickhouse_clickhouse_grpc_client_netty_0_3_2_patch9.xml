@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.clickhouse:clickhouse-grpc-client:netty:0.3.2-patch9">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../TI_tools/my_repository/com/clickhouse/clickhouse-grpc-client/0.3.2-patch9/clickhouse-grpc-client-0.3.2-patch9-netty.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/clickhouse/clickhouse-grpc-client/0.3.2-patch9/clickhouse-grpc-client-0.3.2-patch9-netty.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../TI_tools/my_repository/com/clickhouse/clickhouse-grpc-client/0.3.2-patch9/clickhouse-grpc-client-0.3.2-patch9-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/clickhouse/clickhouse-grpc-client/0.3.2-patch9/clickhouse-grpc-client-0.3.2-patch9-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../TI_tools/my_repository/com/clickhouse/clickhouse-grpc-client/0.3.2-patch9/clickhouse-grpc-client-0.3.2-patch9-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/clickhouse/clickhouse-grpc-client/0.3.2-patch9/clickhouse-grpc-client-0.3.2-patch9-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
