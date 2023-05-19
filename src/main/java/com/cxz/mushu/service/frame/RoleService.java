@@ -25,8 +25,6 @@ import java.util.Map;
 
 /**
  * 权限管理 - 角色管理模块
- * @author gdp
- *
  */
 @Service
 public class RoleService {

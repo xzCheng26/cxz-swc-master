@@ -1,5 +1,6 @@
-package com.cxz.mushu;
+package com.cxz.mushu.servlet;
 
+import com.cxz.mushu.SwcApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 

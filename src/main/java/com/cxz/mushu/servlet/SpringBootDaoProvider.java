@@ -3,7 +3,7 @@
  * 用户不能删除系统源码上的版权信息, 使用许可证地址:
  * https://www.ruisitech.com/licenses/index.html
  */
-package com.cxz.ext.service;
+package com.cxz.mushu.servlet;
 
 import com.rsbi.ext.engine.dao.DaoHelper;
 import com.rsbi.ext.engine.dao.DaoProvider;
@@ -16,8 +16,6 @@ import javax.servlet.ServletContext;
  * springboot 提供 ext3 框架使用的 daoHelper 类
  * @ClassName SpringBootDaoProvider
  * @Description SpringBootDaoProvider
- * @Author huangqin
- * @Date 2020/12/31 4:18 下午
  */
 public class SpringBootDaoProvider implements DaoProvider  {
 

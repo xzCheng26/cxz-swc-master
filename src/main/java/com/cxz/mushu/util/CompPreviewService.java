@@ -1,5 +1,6 @@
 package com.cxz.mushu.util;
 
+import com.cxz.mushu.servlet.ExtLoginInfoLoader;
 import com.rsbi.ext.engine.ConstantsEngine;
 import com.rsbi.ext.engine.ExtConfigConstants;
 import com.rsbi.ext.engine.ExtConstants;
@@ -26,7 +27,6 @@ import com.rsbi.ext.engine.wrapper.ExtRequestImpl;
 import com.rsbi.ext.engine.wrapper.ExtResponse;
 import com.rsbi.ext.engine.wrapper.ExtResponseImpl;
 import com.cxz.mushu.service.bireport.TableService;
-import com.cxz.ext.service.ExtLoginInfoLoader;
 import org.apache.commons.fileupload.FileUploadException;
 
 import javax.script.*;
@@ -39,8 +39,6 @@ import java.util.Map;
 
 /**
  * 组件预览类.创建必要的组件预览对象
- * @author hq
- * @date Aug 18, 2010
  */
 public class CompPreviewService {
 	

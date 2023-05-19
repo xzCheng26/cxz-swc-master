@@ -7,12 +7,12 @@
 
 	<constant name="resPath" value="https://www.ruisitech.com/rsbi-ent" />
 	<constant name="xmlResource" value="/ext2/ext-config/pages/" />
-	<constant name="securityClass" value="com.cxz.ext.service.ExtLoginChecker"/>
-	<constant name="loginUserClass" value="com.cxz.ext.service.ExtLoginInfoLoader"/>
-	<constant name="fieldLoader" value="com.cxz.ext.service.MyCrossFieldLoader" />
-	<constant name="xmlLoader" value="com.cxz.ext.service.LoadXmlFromDB"/>
+	<constant name="securityClass" value="com.cxz.mushu.servlet.ExtLoginChecker"/>
+	<constant name="loginUserClass" value="com.cxz.mushu.servlet.ExtLoginInfoLoader"/>
+	<constant name="fieldLoader" value="com.cxz.mushu.servlet.MyCrossFieldLoader" />
+	<constant name="xmlLoader" value="com.cxz.mushu.servlet.LoadXmlFromDB"/>
 	<constant name="contextListener" value="com.cxz.mushu.util.MVCleanListener"/>
-	<constant name="daoProvider" value="com.cxz.ext.service.SpringBootDaoProvider"/>
+	<constant name="daoProvider" value="com.cxz.mushu.servlet.SpringBootDaoProvider"/>
 
 	<chart shape="line" class="com.rsbi.ext.engine.view.emitter.chart.echarts.LineChart"/>
 	<chart shape="area" class="com.rsbi.ext.engine.view.emitter.chart.echarts.AreaChart"/>

@@ -12,8 +12,6 @@ import com.rsbi.ext.engine.view.context.grid.PageInfo;
  * bi系统的 sqlite 实现
  * @ClassName SqliteHelperImpl
  * @Description SqliteHelperImpl
- * @Author gdp
- * @Date 2020/6/2 1:17 下午
  */
 public class SqliteHelperImpl implements DatabaseHelper {
 

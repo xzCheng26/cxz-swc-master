@@ -6,8 +6,6 @@ import java.util.Map;
 
 /**
  * 明细提取dto
- * @author hq
- *
  */
 public class TableDetailDto extends PageParam {
 	

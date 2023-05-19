@@ -12,8 +12,6 @@ import java.util.Map;
 
 /**
  * 清除 MV 缓存得 listerner
- * @author hq
- *
  */
 public class MVCleanListener implements ContextListener {
 	

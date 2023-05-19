@@ -1,12 +1,10 @@
-package com.cxz.ext.service;
+package com.cxz.mushu.servlet;
 
 import com.cxz.mushu.entity.frame.User;
 
 
 /**
  * 数据权限控制接口
- * @author hq
- * @date 2017-1-18
  */
 public interface DataControlInterface {
 	

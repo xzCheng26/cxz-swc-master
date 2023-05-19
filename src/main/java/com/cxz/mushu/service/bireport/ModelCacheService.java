@@ -13,8 +13,6 @@ import java.util.Map;
 
 /**
  * 数据建模数据源/数据集缓存对象
- * @author hy
- * @date 2017-5-2
  */
 @Service
 public class ModelCacheService {

@@ -5,15 +5,13 @@
  */
 package com.cxz.mushu.service.frame;
 
-import com.cxz.ext.service.DataControlImpl;
-import com.cxz.ext.service.DataControlInterface;
+import com.cxz.mushu.servlet.DataControlImpl;
+import com.cxz.mushu.servlet.DataControlInterface;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
  * @ClassName 数据权限控制类
- * @Author huangqin
- * @Date 2020/12/14 3:29 下午
  */
 @Configuration
 public class DataControlConfig {

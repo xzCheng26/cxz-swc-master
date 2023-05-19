@@ -1,4 +1,4 @@
-package com.cxz.ext.service;
+package com.cxz.mushu.servlet;
 
 import com.rsbi.ext.engine.dao.DaoHelper;
 import com.rsbi.ext.engine.service.loginuser.LoginUserInfoLoader;
@@ -9,15 +9,15 @@ import java.util.Map;
 
 /**
  * ext 获取登录信息的方法
- * @author hq
- * @date Mar 25, 2010
  */
 public class ExtLoginInfoLoader  implements LoginUserInfoLoader {
 
+	@Override
 	public String getUserId() {
 		return null;
 	}
 
+	@Override
 	public Map<String, Object> loadUserInfo(ExtRequest request, DaoHelper dao) {
 		/**
 		User user = (User)request.getSession().getAttribute(VdopConstant.USER_KEY_IN_SESSION);

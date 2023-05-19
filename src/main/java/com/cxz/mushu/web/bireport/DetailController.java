@@ -20,8 +20,6 @@ import java.util.Map;
 
 /**
  * 提取明细 controller
- * @author hq
- *
  */
 @Controller
 @RequestMapping(value = "/bireport")
